@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9fe7f46f-6059-4f5c-9627-9b00024bbcf1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/deployment/patch-ca-bundle.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/patch-ca-bundle.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/kustomization.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deployment/patch-ca-bundle.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            <state relative-caret-position="107">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -291,13 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/create-signed-cert.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1144">
-          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/k8s/service.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -326,10 +318,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/create-signed-cert.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1144">
+          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/patch-ca-bundle.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="107">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
