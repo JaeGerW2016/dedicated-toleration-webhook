@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  template:
+    spec:
+      containers:
+        - image: 314315960/dedicated-toleration-webhook:v1.0
+          name: dedicated-toleration-webhook
+          volumeMounts:
+            - mountPath: /etc/certs
+              name: cert
+              readOnly: true
+      volumes:
+        - name: cert
+          secret:
+            secretName: dedicated-toleration-webhook
