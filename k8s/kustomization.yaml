@@ -7,4 +7,4 @@ namePrefix: dedicated-toleration-webhook-
 resources:
   - deployment.yaml
   - service.yaml
-  - mutating-webhook-configuration.yaml
+  - mutatingwebhook-ca-bundle.yaml

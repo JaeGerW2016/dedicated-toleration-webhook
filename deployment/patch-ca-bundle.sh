@@ -12,14 +12,12 @@ cat <<EOF  >> k8s/mutatingwebhook-ca-bundle.yaml
 apiVersion: admissionregistration.k8s.io/v1beta1
 kind: MutatingWebhookConfiguration
 metadata:
-  name: dedicated-toleration-webhook
-  labels:
-    app: dedicated-toleration-webhook
+  name: mutating-webhook-configuration
 webhooks:
   - name: dtw.webhook.io
     clientConfig:
       service:
-        name: dedicated-toleration-webhook
+        name: dedicated-toleration-webhook-service
         namespace: default
         path: "/apply-dtw"
       caBundle: ${CA_BUNDLE}
