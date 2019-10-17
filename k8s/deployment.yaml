@@ -7,7 +7,21 @@ spec:
     spec:
       containers:
         - image: 314315960/dedicated-toleration-webhook:v1.0
+          imagePullPolicy: Always
           name: dedicated-toleration-webhook
+          env:
+            - name: MATCH_LABEL_KEY
+              value: component
+            - name: MATCH_LABEL_VALUE
+              value: nvidia-gpu
+            - name: TOLERATION_KEY
+              value: dedicated
+            - name: TOLERATION_OPERATOR
+              value: Equal
+            - name: TOLERATION_VALUE
+              value: gpu
+            - name: TOLERATION_EFFECT
+              value: NoSchedule
           volumeMounts:
             - mountPath: /etc/certs
               name: cert

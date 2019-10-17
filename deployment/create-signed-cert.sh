@@ -42,7 +42,7 @@ while [[ $# -gt 0 ]]; do
     shift
 done
 
-[ -z ${service} ] && service=dedicated-toleration-webhook
+[ -z ${service} ] && service=dedicated-toleration-webhook-service
 [ -z ${secret} ] && secret=dedicated-toleration-webhook
 [ -z ${namespace} ] && namespace=default
 
