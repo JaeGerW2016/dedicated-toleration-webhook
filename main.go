@@ -127,7 +127,7 @@ func apply(ar v1beta1.AdmissionReview) *v1beta1.AdmissionResponse {
 		deploymentCopy := deployment.DeepCopy()
 		klog.V(1).Infof("Examining deployment: %v\n", deployment.GetName())
 
-		for k,v := range deployment.Labels {
+		for k,v := range deployment.ObjectMeta.Labels {
 			if isMatchMetadataLabel(k, v) {
 				if !addOrUpdateTolerationInDeployment(&deployment, &corev1.Toleration{
 					Key:      tolerationKey,

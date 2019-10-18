@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - image: 314315960/dedicated-toleration-webhook:v1.0
+        - image: 314315960/dedicated-toleration-webhook:v1.3
           imagePullPolicy: Always
           name: dedicated-toleration-webhook
           env:
